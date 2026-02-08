@@ -5,7 +5,7 @@
 This project analyzes a car market dataset to explore pricing, fuel efficiency, and popularity patterns across passenger vehicles.  
 The focus lies on descriptive analysis, robust data cleaning, and interpretable statistical methods rather than predictive modeling.
 
-The analysis is restricted to combustion-engine vehicles produced from 1995 onward to ensure comparability and sufficient data quality.
+The analysis focuses on combustion-engine vehicles produced from 1995 onward to ensure comparability and sufficient data quality.
 
 ---
 
@@ -28,34 +28,34 @@ The analysis is restricted to combustion-engine vehicles produced from 1995 onwa
 
 ## Analysis Structure
 
-### 1. Data Loading & Inspection
+### Data Loading & Inspection
 - Load data from a GitHub-hosted CSV for reproducibility
 - Inspect structure, data types, missing values, and basic distributions
 
-### 2. Data Cleaning
+### Data Cleaning
 - Handle missing values using domain-driven assumptions
 - Introduce an explicit engine type classification (combustion, electric, rotary)
 - Remove non-informative or structurally ambiguous features
 - Standardize data types and string representations
 
-### 3. Filtering & Feature Engineering
+### Filtering & Feature Engineering
 - Restrict analysis to vehicles from model year 1995 onward
 - Focus on combustion-engine vehicles for metric comparability
 - Create derived features such as:
   - `total_mpg` (combined fuel efficiency)
   - `price_per_hp` (price–performance proxy)
 
-### 4. Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 - Descriptive statistics for key numerical variables
 - Group-based comparisons across drivetrain, vehicle size, and engine configuration
 - Visual analysis of distributions, outliers, and non-linear patterns
 
-### 5. Correlation & Regression Analysis
+### Correlation & Regression Analysis
 - Pearson correlation analysis with visual heatmaps
 - Pairwise correlations with confidence intervals and p-values
 - Linear regression models to assess the relationship between engine power and price
 
-### 6. ANOVA
+### ANOVA
 - One-way ANOVA to test differences in vehicle popularity across vehicle sizes
 - Post-hoc Tukey tests for pairwise group comparisons
 - Visual validation using boxplots
